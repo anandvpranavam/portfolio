@@ -22,3 +22,19 @@
     color: #111111;
 
   }
+  .flexbox{
+    display: flex; /*only to set the contents on one line*/
+    justify-content:left;/*align contents horizontally*/
+    align-items:center;/*align contents vertically*/
+    outline:1px solid blue;
+    flex-wrap:wrap;
+    max-width: 600px;
+  }
+  
+  .item{
+    outline:1px solid red;
+    min-width:300px;
+    background-color: red;
+    flex-wrap:wrap;
+  }
+ 
