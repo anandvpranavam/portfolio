@@ -24,17 +24,43 @@
   }
   .flexbox{
     display: flex; /*only to set the contents on one line*/
-    justify-content:left;/*align contents horizontally*/
-    align-items:center;/*align contents vertically*/
+    /* justify-content:center;align contents horizontally */
+    /* align-items:center;align contents vertically */
+    /* align-content:end; determines the space between 2 rows */
     outline:1px solid blue;
-    flex-wrap:wrap;
-    max-width: 600px;
+    /* flex-wrap:wrap; */
+    
+    min-height: 300px;
   }
   
   .item{
-    outline:1px solid red;
-    min-width:300px;
+    outline:1px solid rgb(26, 17, 17);
+    width:200px;
+    min-height: 100px;
     background-color: red;
-    flex-wrap:wrap;
   }
- 
+  .second{
+    /* align-self: flex-start; */
+    /* flex-grow: 0.7; */
+    flex-shrink: 0;
+    /* order: 1; */
+  }
+ .first{
+  /* align-self: flex-end; */
+  /* order: 2; */
+  flex-grow: 0.3;
+ }
+ .third{
+  /* align-self: flex-end; */
+  /* order: 4; */
+  flex-grow: 1;
+ }
+ .fourth{
+  /* align-self: flex-start; */
+  /* order: 3; */
+  flex-grow: 2;
+ }
+ .fifth{
+  /* align-self: flex-end; */
+  /* order: 5; */
+ }
