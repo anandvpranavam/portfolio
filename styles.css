@@ -29,7 +29,7 @@
     /* align-content:end; determines the space between 2 rows */
     /* outline:1px solid blue; */
     /* flex-wrap:wrap; */
-    background-color: crimson;
+    /* background-color: crimson; */
     align-items: center;
     color: #ffffff;
     /* min-height: 300px; */
@@ -39,9 +39,15 @@
   .item{
     /* outline:1px solid rgb(26, 17, 17); */
     /* min-width:20px; */
-    padding: 20px;
+    /* padding: 20px; */
+    /* padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 2px; */
+    padding: 20px 5px 20px 5px;
+
     /* min-height: 50px; */
-    background-color: red;
+    background-color:#0000ff;
     justify-items: center;
     /* flex-wrap: wrap; */
   }
@@ -80,8 +86,9 @@ div - block contents
 display - inline (same line)
         - block (down by down)
         - inline-block */
-
- 
+img{
+  width: 300px;
+}
  .box{
   border:1px solid blue;
   height: 50px;
@@ -94,3 +101,15 @@ display - inline (same line)
  .apple{
   color: red;
  }
+.list-container{
+  padding-left: 50px;
+}
+.list{
+  /* display: flex; */
+  list-style: square;
+  list-style-position: inside;
+  background-color:aqua;
+}
+.list>li{
+  /* margin: 0px 20px 0px; */
+}
